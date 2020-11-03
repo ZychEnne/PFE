@@ -73,7 +73,7 @@ objects:
     - name: grafana-ocp
       port: 443
       protocol: TCP
-      targetPort: 8443
+      targetPort: 3000
       NodePort: 32126
     selector:
       app: grafana-ocp
