@@ -71,7 +71,7 @@ objects:
     type: NodePort
     ports:
     - name: grafana-ocp
-      port: 443
+      port: 3000
       protocol: TCP
       targetPort: 3000
       NodePort: 32126
