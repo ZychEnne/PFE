@@ -91,12 +91,12 @@ objects:
       port: 443
       protocol: TCP
       targetPort: 8443
-      NodePort:32123
+      NodePort: 32123
     - name: prometheus-http
       port: 9090
       protocol: TCP
       targetPort: 9090
-      NodePort:32124
+      NodePort: 32124
     selector:
       app: prometheus
 - apiVersion: v1
@@ -491,13 +491,13 @@ objects:
     name: alerts
     namespace: "${NAMESPACE}"
   spec:
-    type:NodePort
+    type: NodePort
     ports:
     - name: alerts
       port: 443
       protocol: TCP
       targetPort: 9443
-      NodePort:32125
+      NodePort: 32125
     selector:
       app: prometheus
 - apiVersion: v1
