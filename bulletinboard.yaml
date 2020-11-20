@@ -24,7 +24,7 @@ objects:
         name: richardyft/bulletin-board:1
       generation: 2
       importPolicy: {}
-      name: 1
+      name: v1.0
       referencePolicy:
         type: Source
   status:
@@ -90,7 +90,7 @@ objects:
         - ${APP_NAME}
         from:
           kind: ImageStreamTag
-          name: ${APP_NAME}:v1.0 
+          name: ${APP_NAME}:1
       type: ImageChange
   status:
 - apiVersion: v1
