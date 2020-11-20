@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Template
 metadata:
   creationTimestamp: null
-  name: bulletinboard
+  name: bulletin-board
 parameters:
 - description: The application name. 
   name: APP_NAME
   required: true
-  value: bulletinboard
+  value: bulletin-board
 objects:
 - apiVersion: v1
   kind: ImageStream
@@ -21,7 +21,7 @@ objects:
     - annotations:
       from:
         kind: DockerImage
-        name: bulletinboard:1.0
+        name: richardyft/bulletin-board:1.0
       generation: 2
       importPolicy: {}
       name: v1.0
