@@ -90,7 +90,7 @@ objects:
         - ${APP_NAME}
         from:
           kind: ImageStreamTag
-          name: ${APP_NAME}:1
+          name: ${APP_NAME}:v1.0 
       type: ImageChange
   status:
 - apiVersion: v1
