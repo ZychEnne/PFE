@@ -21,7 +21,7 @@ objects:
     - annotations:
       from:
         kind: DockerImage
-        name: richardyft/bulletin-board:1.0
+        name: richardyft/bulletin-board
       generation: 2
       importPolicy: {}
       name: v1.0
