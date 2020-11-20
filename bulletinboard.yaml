@@ -7,7 +7,7 @@ parameters:
 - description: The application name. 
   name: APP_NAME
   required: true
-  value: bulletin-board
+  value: bulletinboard
 objects:
 - apiVersion: v1
   kind: ImageStream
