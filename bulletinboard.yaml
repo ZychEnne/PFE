@@ -64,7 +64,7 @@ objects:
         containers:
         - image: ${APP_NAME}
           imagePullPolicy: IfNotPresent
-          name: richardyft/${APP_NAME}
+          name: ${APP_NAME}
           readinessProbe:
             failureThreshold: 3
             httpGet:
