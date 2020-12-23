@@ -68,15 +68,13 @@ objects:
     replicas: "${NUMBER_OF_GALERA_MEMBERS}"
     template:
       metadata:
-      annotations:
-          openshift.io/generated-by: OpenShiftNewApp
-          prometheus.io/path: /metrics
-          prometheus.io/port: "8080"
-          prometheus.io/scrape: "true"
         labels:
           app: "${GALERA_PETSET_NAME}"
         annotations:
           pod.alpha.kubernetes.io/initialized: "true"
+          prometheus.io/path: /metrics
+          prometheus.io/port: "8080"
+          prometheus.io/scrape: "true"
       spec:
         containers:
         - name: "${GALERA_PETSET_NAME}"
